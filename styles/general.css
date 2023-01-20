@@ -21,3 +21,17 @@ nav ul li a{
     color: black;
     text-decoration: none;
 }
+.menu{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: 80px;
+    left: 550px;
+    transition: 5s;
+}
+.menu:hover{
+    height: 400px;
+}
