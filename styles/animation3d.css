@@ -1,0 +1,110 @@
+.container{
+    position: relative;
+    width: 250px;
+    height: 2250px;
+    transform-style: preserve-3d;
+}
+
+.square{
+    
+    transform: rotateY(90deg);
+    width: 50px;
+    height: 50px;
+    border: 5px solid black;
+    
+    
+}
+
+.carrousel{
+   position: absolute;
+    animation: rotation 6s infinite linear forwards, transformation 6s infinite linear forwards;
+    transform-style: preserve-3d;
+    
+} 
+.space{
+    transform-style: preserve-3d;
+    
+    width: 250px;
+    position: absolute;
+    display: flex;
+    top: 100px;
+    justify-content: space-between;
+   
+}
+.space div {
+}
+#carre1{
+    background-color: green;
+    
+    
+}
+#carre2{
+    background-color: blue;
+}
+#carre3{
+    background-color: red;
+}
+#carre4{
+    background-color: purple;
+}
+#carre5{
+    background-color: pink;
+}
+#carre6{
+    background-color: orange;
+}
+#carre7{
+    background-color: black;
+}
+#carre8{
+    background-color: yellow;
+}
+#rotation2{
+    transform: rotate(45deg);
+
+  
+}
+#rotation3{
+    transform: rotate(90deg);
+}
+#rotation4{
+    transform: rotate(140deg);
+}
+@keyframes rotation{
+   0%{
+    top: 0px;
+    left: 0;
+   }
+   25%{
+    top: 0px;
+    left: 850px;
+   }
+   50%{
+    top: 450px;
+    left: 850px;
+   }
+   75%{
+    top: 450px;
+    left: 0;
+   }
+   100%{
+    top: 0;
+    left: 0;
+   }
+  
+} 
+@keyframes transformation{
+    from{
+       transform: rotate3d(0deg);
+      
+    }
+    to{
+       
+       transform: rotate3d(1,1,1,360deg);
+       
+       
+    }
+    
+
+
+}
