@@ -1,0 +1,72 @@
+h1{
+    text-align: center;
+}
+.parent{
+    position: relative;
+    background-color: gray;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-top: 150px;
+    /* border-radius: 5%; */
+}
+.boulle{ 
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    padding: auto;
+    color: white;
+    animation-name: mouvement;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  
+}
+@keyframes mouvement{
+    0%{
+      top: 0;
+      left: 0;
+    }
+    25%{
+      top: 0;
+      left: 770px;
+    }
+    50%{
+      top:470px;
+      left: 770px;
+    }
+    75%{
+      top: 470px;
+      left: 0px;
+    }
+    100%{
+      top: 0;
+      left: 0px;
+    }
+
+ 
+}
+ #une{
+    animation-delay: 1s;
+} 
+
+#deux{
+    animation-delay: 2s;
+} 
+
+#trois{
+    animation-delay: 3s;
+} 
+
+#quatre{
+    animation-delay: 4s;
+} 
+#cinque{
+    animation-delay: 5s;
+} 
+#six{
+    animation-delay: 6s;
+} 
